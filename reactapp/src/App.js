@@ -1,14 +1,14 @@
 import { useState } from 'react';
 import './App.css';
-import Button from "./components/UI/Button/Button";
+import Button from "./Components/UI/Button/Button";
 
-import Card from "./components/UI/Card/Card";
+import Card from "./Components/UI/Card/Card";
 import React from 'react';
 function App() {
 
   var qCards;
   var startBtn;
-  var resultBtn;
+  // var resultBtn;
 
   const questionData = [
     {
@@ -79,9 +79,13 @@ function App() {
 
   ]
   const [startFlag, setStartFlag] = useState(false);
+  // eslint-disable-next-line 
   const [resultFlag, setResultFlag] = useState(false);
+  // eslint-disable-next-line 
   const [buttonText, setButtonText] = useState('Start Quiz');
+  // eslint-disable-next-line 
   const [questionsCorrect, setQuestionsCorrect] = useState(0);
+  // eslint-disable-next-line 
   const [answered, setAnswered] = useState(0);
 
   function handleStart()
